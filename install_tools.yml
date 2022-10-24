@@ -7,7 +7,11 @@
   - name: update repository index
     apt:
       update_cache: yes
+  
+  - name: upgrade 
+    apt:
+      upgrade: yes
 
-  - name: install tools
+  - name: install htop
     apt:
       name: htop
