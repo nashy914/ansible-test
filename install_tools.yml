@@ -7,10 +7,15 @@
   - name: update repository index
     apt:
       update_cache: yes
-  
-  - name: upgrade 
+
+  - name: upgrade
     apt:
       upgrade: yes
+
+  - name: install neofetch
+    apt:
+      name: neofetch
+      state: present
 
   - name: install htop
     apt:
